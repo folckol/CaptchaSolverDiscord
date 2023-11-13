@@ -1,0 +1,12 @@
+Впишите пригласительную ссылку
+InviteLink=
+
+Укажите вид капчи, на данный момент поддерживаются: |Alongside|Vulcan|SledgeHammer|Choose Emoji|Click Button Classic|Pandez|Verifier|
+CaptchaType=Verifier
+
+Настройте задержку между заходами в секундах
+Delay=2.5
+
+Настройте максимальное кол-во попыток на заход
+Attempts=2
+
