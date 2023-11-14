@@ -73,9 +73,9 @@ def img(url):
     playwright = sync_playwright().start()
 
     browser = playwright.chromium.launch(proxy={
-        "server": "51.68.138.50:21031",
-        "username": 'fil123321fil',
-        "password": '8n91qxga',
+        "server": "",
+        "username": '',
+        "password": '',
     }, headless=True, devtools=False)
 
     UA = random.choice(['Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.125 (Edition Rambler)',
@@ -116,9 +116,9 @@ class RegerModel:
         playwright = sync_playwright().start()
 
         self.browser = playwright.chromium.launch(proxy={
-            "server": "51.68.138.50:21031",
-            "username": 'fil123321fil',
-            "password": '8n91qxga',
+            "server": "",
+            "username": '',
+            "password": '',
         },headless=False,devtools=True)
 
         UA = ua_generator.generate(device='desktop', browser='chrome').text
@@ -153,8 +153,8 @@ class RegerModel:
         self.page.route(re.compile(r'.*public_key.*'), route_handler)
 
         self.link = ''
-        login = "amijlkmlkz.094627@rambler.ru"
-        password = "pW44Qdj2YuD1"
+        login = ""
+        password = ""
         # Открытие страницы Twitter
         #self.page.goto("https://twitter.com/i/flow/signup")
         self.page.goto("https://twitter.com/i/flow/signup?lang=en", timeout=25000, wait_until='domcontentloaded')
@@ -252,7 +252,7 @@ class RegerModel:
         'Accept': 'application/json'
         }
         post_data_createTask = {
-        "clientKey":"4c4a909476a237b9ab4efd8390851ca5",
+        "clientKey":"",
         "task":
             {
                 "type":"FunCaptchaTaskProxyless",
@@ -273,7 +273,7 @@ class RegerModel:
 
         #создание запроса для получения токена
         post_data_getTaskResult = {
-            "clientKey": "4c4a909476a237b9ab4efd8390851ca5",
+            "clientKey": "",
             "taskId": self.task_id
         }
         def getTaskResult():
